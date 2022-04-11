@@ -10,10 +10,11 @@
 
     <div id="latenight">
 
-      <h1 >La mail random è : <span style="color: brown;">{{ emailRandom }}</span> </h1>
-
-       
-
+      <ul>
+        <li v-for="(email, index) in emailRandom" v-if="emailRandom.length === 10">
+          <h1 >Email numero {{index}} : <span style="color: brown;">{{ email }}</span> </h1>
+        </li>
+      </ul>
 
     </div>
 
